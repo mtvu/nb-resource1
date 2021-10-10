@@ -1,0 +1,325 @@
+[I 01:37:10.676 LabApp] [beakerx] enabled
+[I 01:37:10.684 LabApp] JupyterLab extension loaded from /home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab
+[I 01:37:10.684 LabApp] JupyterLab application directory is /home/abeo/.pyenv/versions/miniconda3-4.7.12/share/jupyter/lab
+[I 01:37:10.689 LabApp] Serving notebooks from local directory: /home/abeo/work/notebooks/resources/fastbook
+[I 01:37:10.690 LabApp] Jupyter Notebook 6.1.4 is running at:
+[I 01:37:10.690 LabApp] http://ab-ubuntu-vm-node7:8888/
+[I 01:37:10.690 LabApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[W 01:37:15.642 LabApp] Could not determine jupyterlab build status without nodejs
+[W 01:37:16.921 LabApp] 404 GET /api/contents/Untitled.ipynb?content=0&1601653036893 (192.168.0.210): No such file or directory: Untitled.ipynb
+[W 01:37:16.923 LabApp] No such file or directory: Untitled.ipynb
+[W 01:37:16.931 LabApp] 404 GET /api/contents/notebooks/References.ipynb?content=0&1601653036894 (192.168.0.210): No such file or directory: notebooks/References.ipynb
+[W 01:37:16.932 LabApp] No such file or directory: notebooks/References.ipynb
+[W 01:37:17.498 LabApp] 404 GET /api/contents/notebooks?1601653037482 (192.168.0.210): No such file or directory: notebooks
+[W 01:37:17.499 LabApp] No such file or directory: notebooks
+[E 01:37:17.944 LabApp] Uncaught exception GET /lab/api/extensions?1601653036891 (192.168.0.210)
+    HTTPServerRequest(protocol='http', host='ab-ubuntu-vm-node7:8888', method='GET', uri='/lab/api/extensions?1601653036891', version='HTTP/1.1', remote_ip='192.168.0.210')
+    Traceback (most recent call last):
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+        return self.__get_result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 01:37:17.951 LabApp] Unhandled error
+[E 01:37:17.952 LabApp] Uncaught exception GET /lab/api/extensions?1601653037894 (192.168.0.210)
+    HTTPServerRequest(protocol='http', host='ab-ubuntu-vm-node7:8888', method='GET', uri='/lab/api/extensions?1601653037894', version='HTTP/1.1', remote_ip='192.168.0.210')
+    Traceback (most recent call last):
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+        return self.__get_result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 01:37:17.953 LabApp] Unhandled error
+[W 02:10:24.644 LabApp] Could not determine jupyterlab build status without nodejs
+[E 02:10:25.776 LabApp] Uncaught exception GET /lab/api/extensions?1601910625734 (192.168.0.210)
+    HTTPServerRequest(protocol='http', host='ab-ubuntu-vm-node7:8888', method='GET', uri='/lab/api/extensions?1601910625734', version='HTTP/1.1', remote_ip='192.168.0.210')
+    Traceback (most recent call last):
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+        return self.__get_result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 02:10:25.777 LabApp] Unhandled error
+[E 02:10:26.752 LabApp] Uncaught exception GET /lab/api/extensions?1601910626737 (192.168.0.210)
+    HTTPServerRequest(protocol='http', host='ab-ubuntu-vm-node7:8888', method='GET', uri='/lab/api/extensions?1601910626737', version='HTTP/1.1', remote_ip='192.168.0.210')
+    Traceback (most recent call last):
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/web.py", line 1703, in _execute
+        result = await result
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 221, in get
+        extensions = yield self.manager.list_extensions()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 91, in list_extensions
+        pkg_info = yield self._get_pkg_info(name, data)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 160, in _get_pkg_info
+        outdated = yield self._get_outdated()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 742, in run
+        yielded = self.gen.throw(*exc_info)  # type: ignore
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/handlers/extension_manager_handler.py", line 194, in _load_outdated
+        app_options=self.app_options
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/tornado/gen.py", line 735, in run
+        value = future.result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+        return self.__get_result()
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+        raise self._exception
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+        result = self.fn(*self.args, **self.kwargs)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 541, in get_latest_compatible_package_versions
+        return handler.latest_compatible_package_versions(names)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab/commands.py", line 1679, in latest_compatible_package_versions
+        ret = self._run([which('npm'), 'pack'] + keys, cwd=tempdir)
+      File "/home/abeo/.pyenv/versions/miniconda3-4.7.12/lib/python3.7/site-packages/jupyterlab_server/process.py", line 59, in which
+        raise ValueError(msg)
+    ValueError: Please install Node.js and npm before continuing installation. You may be able to install Node.js from your package manager, from conda, or directly from the Node.js website (https://nodejs.org).
+[W 02:10:26.754 LabApp] Unhandled error

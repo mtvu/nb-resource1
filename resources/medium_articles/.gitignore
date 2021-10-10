@@ -1,0 +1,12 @@
+# Jupyter Notebook checkpoint
+*.ipynb_checkpoints
+
+# video and frames
+*.mp4
+*.jpg
+
+# pickle files
+*.pkl
+
+*.Rhistory
+

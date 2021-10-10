@@ -1,0 +1,14 @@
+{
+  "name": "realtime-dashboard-worker",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Navaneesh Kumar",
+  "license": "MIT",
+  "scripts": {
+    "start": "node worker.js"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "node-schedule": "^2.0.0"
+  }
+}

@@ -1,0 +1,99 @@
+#  require.txt :: mock requirements.txt for fecon236          Date : 2018-06-13
+#
+#    "$ pip install -r requirements.txt" is the orthodox way, BUT
+#    "$ pip install -r require.txt"      ONLY after reading below.
+#
+#  When we do continuous integration testing, we prefer the environment
+#  created by conda, rather than by pip. Travis CI automatically installs
+#  from requirements.txt when the language is Python -- which is something
+#  we want to intentionally avoid for that reason. This is the developers'
+#  preference, but the user may have different practices. So...
+#  
+#       =>  require.txt can be COPIED as requirements.txt,
+#                       or be used directly, upon understanding this advisory,
+#
+#       for the bare essentials, which EXCLUDES software optimizations
+#       such as MLK (Math Kernel Library) and LLVM, as well as
+#       Jupyter notebook and IPython console.
+#  
+#  Please DISREGARD this file, if you already using the Anaconda distribution
+#  for the full stack -- those optimizations are included effortlessly.
+#
+#  =>  TIP: get the conda-aware version of pip to INSTALL fecon236:
+#  
+#       conda install pip virtualenv
+$
+#       pip install --pre fecon236
+#       pip install --upgrade fecon236
+#       pip uninstall fecon236
+#  
+#
+#  _______________ Virtual conda environment / Installing dependencies
+#  
+#  The --file flag trick can be used to create a specific environment:
+#  
+#       conda create --name feenv --file PATHTO/require.txt
+#  
+#  That trick will also work to build on an existing environment fooenv:
+#  
+#       conda install --name fooenv --file PATHTO/require.txt
+#  
+#  Note that this trick ONLY works because each package in this require.txt
+#  is installable via conda.
+#  
+#  Then after activating your virtual environment, install fecon236
+#  per above by pip. For more details, see
+#       https://conda.io/docs/user-guide/tasks/manage-environments.html
+#
+#
+# =================================== At the bare MINIMUM, require... =========
+
+pandas==0.22.0
+numpy==1.14.3
+scipy==1.1.0
+statsmodels==0.8.0
+matplotlib==2.2.2
+sympy==1.1.1
+pandas-datareader==0.6.0
+
+#  pandas is the CORNERSTONE which should dictate the best numpy version.
+#  All else should be compatible with those two package.
+#
+#  Above tested as of fecon236:                         10.6.3a35.post180530
+#        - Python 2.7 environment
+#        - Python 3.4 environment
+#  Versions are inter-compatible (dependency resolution) tested per
+#  conda (Boolean Satisfiability SAT solver) and Travis integration.
+#
+#  Written in LOCKFILE format, i.e. using "==" instead of ">="
+#  since the resulting build will be DETERMINISTIC.
+
+
+#  _______________ RECOMMENDED GOODNESS to supplement fecon236:
+#                  IPython console  (far better than regular >>> Python IDE)
+#                  Jupyter notebook (for research and development)
+#  ----- but also...
+#  lxml
+#  html5lib
+#  bs4
+#  ----- pandas needs the previous three to best parse, see sec module.
+
+
+# =========================================================== ENDNOTES ========
+#
+#  _______________ Tedious setup.py considerations
+#  
+#  Whereas "install_requires" requirements in setup.py are Abstract,
+#  i.e. not associated with any particular index,
+#  requirements files often contain pip options like --index-url
+#  or --find-links to make requirements Concrete, i.e.
+#  associated with a particular index or directory of packages.
+#  Whereas "install_requires" metadata in setup.py is automatically
+#  analyzed by pip during an install, requirements files are NOT,
+#  and only are used when a user specifically installs them
+#  using "pip install -r requirements.txt".
+#
+#  RTFM  https://pip.readthedocs.io/en/1.1/requirements.html
+#  Donald Stufft, 2013, "setup.py vs requirements.txt"
+#      https://caremad.io/posts/2013/07/setup-vs-requirement
+

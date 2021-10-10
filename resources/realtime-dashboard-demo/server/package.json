@@ -1,0 +1,28 @@
+{
+  "name": "realtime-dashboard-server",
+  "version": "1.0.0",
+  "description": "Server code for Real-time dashboard using GraphQL and Redis",
+  "main": "index.js",
+  "author": "Navaneesh Kumar",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --fix --ignore-path .gitignore .",
+    "start": "nodemon index.js",
+    "prelint": "prettier --write **/*.js"
+  },
+  "dependencies": {
+    "apollo-server": "^2.21.1",
+    "graphql": "^15.5.0",
+    "graphql-redis-subscriptions": "2.3.1",
+    "graphql-subscriptions": "^1.2.1",
+    "ioredis": "^4.24.2",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}
